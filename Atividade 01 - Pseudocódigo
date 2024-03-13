@@ -1,0 +1,161 @@
+//Faça um algoritmo para calcular o volume de uma lata cilíndrica através da seguinte fórmula: Vol = 3,14. r². h. O algoritmo deve receber o valor do raio (r) e da altura (h) e, após calcular o volume, mostrar o resultado ao usuário. Procure empregar o conceito de constantes e variáveis neste problema.
+
+programa Um
+
+  const
+    PI = 3,14;
+    F = PI*r~2*h;
+
+  var
+    r: real;
+    h: real;
+    a : real;
+  início
+    escreva("Informe a altura (h) em centímetros do cilíndro: ");
+    leia(h);
+    escreva("Informe o raio(r) em centímetros do cilíndro ");
+    leia(r);
+    a = F;
+    escreva ("A área do cilíndro é " a);
+  fim
+
+//Escreva um algoritmo para ler dos valores para as variáveis A e B. O algoritmo deve efetuar a troca dos valores, de forma que a variável A passe a possuir o valor de B e a variável B passe a possuir o valor de A. O algoritmo deve apresentar os valores ao usuário, antes e depois da troca.
+
+programa Dois
+  
+  var
+    a: inteiro;
+    b: inteiro;
+    aux: inteiro;
+
+  início
+    escreva("Informe 2 valores: ");
+    leia (a);
+    leia (b);
+    aux<-b;
+    b = a;
+    a = aux;
+    escreva("Valores trocados! A: " a " e B: " b);
+  fim
+
+//Desenvolva um algoritmo para um programa que leia três valores inteiros e apresente como resultado o valor da soma dos quadrados dos três valores lidos.
+
+programa Três
+
+  var
+    v1, v2, v3, f: inteiro;
+
+  início
+    escreva("Informe o primeiro valor: " v1);
+    leia(v1);
+    escreva("Informe o segundo valor: " v2);
+    leia(v2);
+    escreva("Informe o terceiro valor: " v3);
+    leia(v3);
+    f = (v1^2)+(v2^2)+(v3^2);
+    escreva("O resultado é: " f);
+  fim
+
+//Desenvolva um algoritmo para um programa que leia três valores inteiros e apresente como resultado o valor do quadrado da soma dos três valores lidos.
+
+programa Quatro
+  
+  var
+    v1, v2, v3, f: inteiro;
+
+ início
+    escreva("Informe o primeiro valor: " v1);
+    leia(v1);
+    escreva("Informe o segundo valor: " v2);
+    leia(v2);
+    escreva("Informe o terceiro valor: " v3);
+    leia(v3);
+    f = (v1+v2+v3)^2;
+    escreva("O resultado é: " f);
+  fim
+
+//Elabore um programa que leia dois valores e apresente os resultados das quatro operações aritméticas básicas realizadas entre eles.
+
+programa Cinco
+
+  var 
+    v1, v2, r1, r2, r3, r4: real;
+
+  início
+    escreva("Informe o primeiro valor: ");
+    leia (v1);
+    escreva("Informe o segundo valor: ");
+    leia (v2);
+    r1 = v1+v2;
+    r2 = v1-v2;
+    r3 = v1*v2;
+    r4 = v1/v2;
+    escreva("O resultado das quatro operações é: Soma = " r1 "Subtração = " r2 "Multiplicação = " r3 "Divisão = " r4);
+  fim
+
+//Escreva um algoritmo que receba um valor em Real e a cotação do Dólar, calcule a conversão do valor e, como saída, apresente o valor a ser convertido (R$), a cotação do Dólar e o valor da conversão ($).
+
+programa Seis 
+
+  var 
+    real, cotadolar, conversao: real; 
+
+  inicio
+    escreva(Informe o valor em Real(R$) a ser convertido: ");
+    leia (real);  
+    escreva(Informe a cotação atual do Dólar($): ");
+    leia (cotadolar);
+    conversão=(real/cotadolar);
+    escreva("Valor a ser convertido: " real "Cotação do dólar hoje: " cotadolar "Resultado da conversão: " conversao);
+  fim
+
+//Desenvolva um algoritmo para calcular a quantidade de litros de combustível que um automóvel que faz média de 12Km/L precisa para uma viagem. O usuário deve informar a distância do trajeto e o algoritmo deve calcular a quantidade de litros através da seguinte fórmula: LitrosUsados = distância / 12
+
+programa Sete
+
+  var
+    litrosUsados, distanciaViagem = real;
+
+  inicio 
+    escreva ("Informe a distância do trajeto que você planeja percorrer: ")
+    leia(distanciaViagem);
+    litrosUsados = distanciaViagem/12;
+    escreva ("A quantidade de combustível, em Litros, que você precisará para a viagem é: " litrosUsados);
+  fim
+
+//Escreva um algoritmo que peça para o usuário informar a sua idade e, em seguida, calcule e apresente o dobro e o triplo da idade informada.
+
+programa Oito
+
+  var 
+    idade, idadeD, idadeT = inteiro;
+
+  inicio
+
+    escreva ("Informe sua idade: ");
+    leia(idade);
+    idadeD = idade*2;
+    idadeT = idade*3;
+    Escreva ("O dobro da sua idade é " idadeD "O triplo da sua idade é " idadeT);
+  fim
+
+//Faça um algoritmo que solicite a idade de 4 pessoas. O algoritmo deve calcular a média aritmética das idades e apresentar o resultado na tela.
+
+programa Nove 
+
+  var
+    idade1, idade2, idade3, idade4 = inteiro;
+    media = real;
+
+  inicio 
+    escreva ("Informe a idade da primeira pessoa: ");
+    leia(idade1);
+    escreva ("Informe a idade da segunda pessoa: ");
+    leia(idade2);
+    escreva ("Informe a idade da terceira pessoa: ");
+    leia(idade3);
+    escreva ("Informe a idade da quarta pessoa: ");
+    leia(idade4);
+    media = (idade1+idade2+idade3+idade4)/4;
+    escreva ("A média da idade das quatro pessoas é: " media);
+  fim
